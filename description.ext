@@ -1,0 +1,126 @@
+respawn="BASE";
+respawnDelay=15;
+disabledAI=1;
+disableChannels[] = {{0,false,true}, {2,true,true}};
+joinUnassigned = 0;
+enableItemsDropping = 0;
+forceRotorLibSimulation = 0;
+weaponPool = 0;
+corpseManagerMode = 1;
+corpseRemovalMinTime = 30*60;
+corpseRemovalMaxTime = 30*60;
+wreckManagerMode = 1;
+wreckRemovalMinTime = 5*60;
+wreckRemovalMaxTime = 10*60;
+enableDebugConsole = 1;
+respawnDialog = 0;
+onPauseScript = "client\clientEvents\onPause.sqf";
+
+class Header {
+	gameType=Sandbox;
+	minPlayers=1;
+	maxPlayers=146;
+};
+
+author="AgentRev - A3Wasteland.com (Edited by [BC]CeccaTTo)";
+onLoadName = "A3Wasteland Altis";
+onLoadMission = "Wasteland is a harsh survival sandbox where two teams and independent players fight for survival.";
+overviewText = "Wasteland is a harsh survival sandbox where two teams and independent players fight for survival.";
+overviewTextLocked = "Wasteland is a harsh survival sandbox where two teams and independent players fight for survival.";
+overviewPicture = "mapConfig\Loading.jpg";
+loadScreen = "mapConfig\Loading.jpg";
+briefing = 0;
+
+#include "debugFlag.hpp"
+
+#define A3W_UICOLOR_R  0.11
+#define A3W_UICOLOR_G  0.11
+#define A3W_UICOLOR_B  0.11
+
+#include "client\gui_base.hpp"
+#include "addons\R3F_ARTY_AND_LOG\desc_include.h"
+#include "client\systems\ui_toolkit.hpp"
+#include "client\systems\common.hpp"
+#include "client\items\warchest\dialog.hpp"
+#include "client\items\atm\atm_gui.hpp"
+#include "client\items\artillery\artillery_gui.hpp"
+#include "client\actions\gui.hpp"
+#include "addons\far_revive\reviveBlank_gui.hpp"
+#include "client\systems\playerMenu\dialog\player_settings.hpp"
+#include "client\systems\groups\dialog\groupManagement.hpp"
+#include "client\systems\gunStore\dialog\gunshop_settings.hpp"
+#include "client\systems\generalStore\dialog\genstore_settings.hpp"
+#include "client\systems\vehicleStore\dialog\vehiclestore_settings.hpp"
+#include "client\systems\vehicleStore\dialog\vehpaint_gui.hpp"
+#include "client\systems\adminPanel\dialog\adminMenu.hpp"
+#include "client\systems\adminPanel\dialog\modMenu.hpp"
+#include "client\systems\adminPanel\dialog\serverAdminMenu.hpp"
+#include "client\systems\adminPanel\dialog\debugMenu.hpp"
+#include "client\systems\adminPanel\dialog\playerMenu.hpp"
+#include "client\systems\adminPanel\dialog\vehicleManagement.hpp"
+#include "client\systems\adminPanel\dialog\markerLog.hpp"
+#include "client\systems\adminPanel\dialog\objectSearch.hpp"
+#include "client\systems\playerMenu\dialog\respawn_dialog.hpp"
+#include "client\systems\playerMenu\dialog\teamkill_dialog.hpp"
+#include "client\systems\killFeed\killFeedMenu_gui.hpp"
+#include "addons\outlw_magrepack\config.hpp"
+#include "addons\gui\gui.hpp"
+#include "addons\parking\list_simple_menu.hpp"
+#include "addons\CHVD\dialog.hpp"
+
+#include "addons\TOParmaInfo\dialog\TOParmaInfo_dialog.hpp"
+#include "infiSTAR_AdminMenu.hpp"
+
+class RscTitles {
+	#include "addons\lsd_nvg\RscTitles.hpp"
+	#include "client\systems\hud\dialog\hud.hpp"
+	#include "client\systems\playerMenu\dialog\welcome.hpp"
+	#include "client\systems\scoreboard\score_gui.hpp"
+	#include "client\systems\killFeed\killFeed_gui.hpp"
+	#include "addons\far_revive\revive_gui.hpp"
+	#include "addons\statusBar\statusBar.hpp"
+};
+
+class CfgDebriefing {
+	class ErrorSteamID {
+		title = "Error";
+		subtitle = "";
+		description = "The server is unable to find your Steam ID due to an Arma engine network bug. Please rejoin the server.<br/>If the problem persists after rejoining, please restart the game.";
+	};
+};
+
+class CfgFunctions {
+	class A3W {
+		#include "client\CfgFunctions.hpp"
+		#include "server\CfgFunctions.hpp"
+	};
+	#include "addons\CHVD\CfgFunctions.hpp"
+};
+
+class CfgNotifications {
+	#include "client\CfgNotifications.hpp"
+};
+
+class CfgSounds
+{
+	sounds[] = {};
+	#include "client\CfgSounds.hpp"
+};
+
+class CfgRemoteExec {
+	class Functions {
+		#ifndef A3W_DEBUG
+		mode = 1;
+		#else
+		mode = 2;
+		#endif
+		#include "client\CfgRemoteExec_fnc.hpp"
+	};
+	class Commands {
+		#ifndef A3W_DEBUG
+		mode = 1;
+		#else
+		mode = 2;
+		#endif
+	};
+};

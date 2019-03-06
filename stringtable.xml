@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+
+  Do not bother submitting translations to the A3W GitHub repo, the strings below are only a tiny fraction of all messages used in the mission.
+
+█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+-->
+<Project name="Wasteland">
+	<Package name="General">
+		<Key ID="STR_WL_Gen_TeamWEST">
+			<English>BLUFOR</English>
+		</Key>
+		<Key ID="STR_WL_Gen_TeamWEST_2">
+			<English>BLUFOR</English>
+		</Key>
+		<Key ID="STR_WL_Gen_TeamEAST">
+			<English>OPFOR</English>
+		</Key>
+		<Key ID="STR_WL_Gen_TeamEAST_2">
+			<English>OPFOR</English>
+		</Key>
+		<Key ID="STR_WL_Gen_TeamGUER">
+			<English>Independent</English>
+		</Key>
+		<Key ID="STR_WL_Gen_TeamGUER_2">
+			<English>Independent</English>
+		</Key>
+	</Package>
+	<Package name="TeamLock">
+		<Key ID="STR_WL_Punish_Teamkiller">
+			<English>Você foi punido por teamkilling duas vezes durante esta sessão. Seu inventário foi apagado e agora você está bloqueado para o lado Independente.</English>
+		</Key>
+		<Key ID="STR_WL_Loading_Teamkiller">
+			<English>Você está restrito ao lado Independente, por ter feito 2 ou mais teamkills durante esta sessão.</English>
+		</Key>
+		<Key ID="STR_WL_Loading_Teamswitched">
+			<English>Você jogou como %1 por muito tempo e não pode mudar para a outra equipe. Você ainda pode jogar como Independente. Caso o administrador esteja online, peça para desbloquear você.</English>
+		</Key>
+	</Package>
+	<Package name="WelcomeMessage">
+		<Key ID="STR_WL_WelcomeToWasteland">
+			<English>&lt;t color='#FF8000' size='2.5' &gt;A3Wasteland Altis v1.4d &lt;/t&gt;</English>
+		</Key>
+		<Key ID="STR_WL_YouAreInTeam">
+			<English>&lt;t color='#FFFFFF' size='1' &gt;* Você entrou no time&lt;img size="1" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt;.&lt;br/&gt;* Se você atacar jogadores do time %4 você será &lt;t color="#FF1111"&gt;PUNIDO!&lt;/t&gt;&lt;br/&gt;* &lt;t color="#FF1111"&gt;NÃO EFETUE SPAM NO CHAT!&lt;/t&gt;&lt;br/&gt;</English>
+		</Key>
+		<Key ID="STR_WL_YouAreInFFA">
+			<English>&lt;t color='#FFFFFF' size='1' &gt;* Você entrou no time &lt;img size="1" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt;.&lt;br/&gt;* Você está &lt;t color="#00aa00"&gt;LIVRE PARA ATACAR QUALQUER UM!&lt;/t&gt;&lt;br/&gt;* &lt;t color="#FF1111"&gt;NÃO EFETUE SPAM NO CHAT!&lt;/t&gt;&lt;br/&gt;</English>
+		</Key>
+		<Key ID="STR_WL_MapMoreInfo">
+			<English>&lt;t color='#FFFFFF' size='1' &gt;Reporte bugs para a Administração &lt;br/&gt;Pressione a tecla WINDOWS para ver o nome dos jogadores.&lt;br/&gt;Pressione END para colocar o protetor auricular.&lt;br/&gt;</English>
+		</Key>
+	</Package>
+	<Package name="TeamKillWarningMessage">
+		<Key ID="STR_TK_MESSAGE">
+			<English>&lt;t size='2' color='#ff0000'&gt;Fogo amigo vai contra as regras do servidor!&lt;/t&gt;&lt;br/&gt;Se isso foi um erro, então você deve se explicar e pedir desculpas, caso contrário você poderá ser desconectado.</English>
+		</Key>
+	</Package>
+	<Package name="Diary">
+		<Key ID="STR_WL_Diary_RulesContent">
+			<English>&lt;br/&gt;    1. Keep bad language to a minimum. If you have a problem with another player, take it to direct.&lt;br/&gt;    2. NO VOIP IN GLOBAL. Use the channels or Teamspeak!.&lt;br/&gt;    3. Team killing when you are on BLUFOR or OPFOR is forbidden and punishable. Play as Independent if you want to be free for all.&lt;br/&gt;    4. Revealing information about your (ex)team to other teams is lame and not appreciated&lt;br/&gt;    5. Do not exploit R3F or any other add-ons or you will be banned.&lt;br/&gt;    6. Using or spamming with loud\long custom sound commands will cause punishment up to permanent ban</English>
+		</Key>
+	</Package>
+	<Package name="ShopDescriptions">
+		<Key ID="STR_WL_ShopDescriptions_Water">
+			<English>Garrafa de água mineral.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Camo">
+			<English>Dependendo do local você consegue uma camuflagem legal.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_CanFood">
+			<English>Enlatado de gato, mas quebra um galho quando bate a fome.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_RepairKit">
+			<English>Com esse KIT você se torna o Macgyver.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_MedKit">
+			<English>Com esse KIT você se torna o Dr. House.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_fuelFull">
+			<English>25 litos de combustível.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_fuelEmpty">
+			<English>Galão de combustível vazio. Você pode enche-lo em um posto de gasolina.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_spawnBeacon">
+			<English>Encontre um local seguro e monte seu Beacon para poder renascer a cada 2 minutos.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_SyphonHose">
+			<English>Ideal para roubar combustível dos veículos.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Energy_Drink">
+			<English>Permite que você corra continuamente por 5 minutos.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Warchest">
+			<English>Ideal para guardar o dinheiro da sua equipe.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_LSD">
+			<English>Droga alucinógena poderosa que te deixa bem doidão vendo duendes por aí.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Marijuana">
+			<English>A Erva Mate das quebradas.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Cocaine">
+			<English>Droga estimulante para a galera que é broxa. Preferidinha do Aécio.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Heroin">
+			<English>Droga analgésica altamente viciante derivada da morfina. Ideal para fãns do Pablo Vitar que dão a rosca.</English>
+		</Key>
+	</Package>
+	<Package name="Dialogs">
+		<Key ID="STR_WL_dialog_TeamkillText">
+			<English>%1 você foi morto pelo seu companheiro de equipe %2&lt;br/&gt;&lt;br/&gt;Se isso foi um acidente, perdoe-o, caso contrário solicite explicações.&lt;br/&gt;&lt;br/&gt;Se o jogador não explicar você pode puni-lo.</English>
+		</Key>
+	</Package>
+	<Package name="Errors">
+		<Key ID="STR_WL_Errors_InProgress">
+			<English>Você já está realizando outra ação!</English>
+		</Key>
+		<Key ID="STR_WL_Errors_InVehicle">
+			<English>Você está ocupado!</English>
+		</Key>
+		<Key ID="STR_WL_Errors_BeaconActive">
+			<English>Você já tem um Beacon ativo!</English>
+		</Key>
+		<Key ID="STR_WL_Errors_BeaconInVehicle">
+			<English>Você não pode entrar em um veículo enquanto coloca um Beacon!</English>
+		</Key>
+		<Key ID="STR_WL_Errors_BeaconTooMany">
+			<English>Você não pode levar mais Beacons!</English>
+		</Key>
+	</Package>
+</Project>
